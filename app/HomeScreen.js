@@ -9,6 +9,12 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Plant List"
         onPress={() => navigation.navigate('PlantList')}
       />
+    &nbsp;
+      <Button
+        title="Adopt a plant"
+        onPress={() => navigation.navigate('AdoptPlant')}
+      />
+
     </View>
   );
 };
