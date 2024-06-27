@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import PlantList from './PlantList';
 import AdoptPlant from './AdoptPlant';
+import ScanPlant from './ScanPlant';
 
 const Stack = createStackNavigator();
 
@@ -16,7 +17,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="PlantList" component={PlantList} />
         <Stack.Screen name="AdoptPlant" component={AdoptPlant} />
-        {/* <Stack.Screen name="ScanPlant" component={ScanPlant} /> */}
+        <Stack.Screen name="ScanPlant" component={ScanPlant} />
 
 
       </Stack.Navigator>

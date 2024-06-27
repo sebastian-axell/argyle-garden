@@ -14,18 +14,15 @@ const HomeScreen = ({ navigation }) => {
       <TouchableOpacity style={styles.addButton} onPress={() => navigation.navigate('PlantList')}>
         <Text style={styles.addButtonText}>Add a Plant</Text>
       </TouchableOpacity>
-      <Text style={styles.text}>Home Screen</Text>
-      <Button
-        title="Go to Plant List"
-        onPress={() => navigation.navigate('PlantList')}
-      />
-    &nbsp;
-      <Button
-        title="Adopt a plant"
-        onPress={() => navigation.navigate('AdoptPlant')}
-      />
 
-    </View>
+    <TouchableOpacity style={styles.addButton} onPress={() => navigation.navigate('AdoptPlant')}>
+        <Text style={styles.addButtonText}>Adopt a plant</Text>
+      </TouchableOpacity>
+
+    <TouchableOpacity style={styles.addButton} onPress={() => navigation.navigate('ScanPlant')}>
+    <Text style={styles.addButtonText}>Scan a plant</Text>
+    </TouchableOpacity>
+  </View>
   );
 };
 
